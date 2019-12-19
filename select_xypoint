@@ -1,0 +1,6 @@
+select
+    lat,
+    lng,
+    ST_X(ST_Transform(ST_SetSRID(ST_Point(lat, lng),4326),3785)) as x,
+    ST_Y(ST_Transform(ST_SetSRID(ST_Point(lat, lng),4326),3785)) as y
+from tbl_polygon_example
