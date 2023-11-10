@@ -1,0 +1,3 @@
+This command will dump the shema and my_table table from the my_database database using the custom format and save it to a file named my_dump_file.dump.
+============================================================================================================================================
+pg_dump -U phusit -d db_geo_thshp -n thshp  --insert -t thshp.shape_search_polygon > my_dump.sql
